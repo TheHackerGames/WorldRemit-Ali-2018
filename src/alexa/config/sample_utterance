@@ -1,0 +1,14 @@
+identifyProblem help {problem_user} please
+identifyProblem {problem_user} am not feeling well
+identifyProblem {problem_user} can't take this anymore
+identifyIssue it's {user_problem}
+identifyIssue it's {user_problem}
+identifyIssue I'm {user_problem}
+AMAZON.NoIntent It's not working
+AMAZON.NoIntent Its not working
+AMAZON.NoIntent It is not working
+AMAZON.NoIntent It isn't helping
+AMAZON.NoIntent It is not helping
+AMAZON.NoIntent Its not helping
+AMAZON.NoIntent No way
+AMAZON.NoIntent No I'm still stressed

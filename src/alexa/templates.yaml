@@ -1,0 +1,20 @@
+welcome: "Welcome to Ally {user_name}, This Alexa skill will help you deal with traumatic experience. You can initiate conversations by asking questions like, Alexa ask ally to help."
+cancel: "Thank you for using Alli."
+re_prompt: "Sorry, I didn't get that, What can I help you with ?"
+un_indentified: "Sorry, I'm not sure I follow, please try again."
+assist_hero: "
+<speak>
+    {user_name}, I'm going to do my best to help <break time=\"0.5s\"/>
+    Remember to try and slow your breathing and take deeper breaths <break time=\"0.5s\"/>
+    Inhale in through your nose slowly <break time=\"1s\"/>
+    Exhale out through your mouth slowly <break time=\"1s\"/>.
+    Keep up the breathing. <break time=\"1s\"/>
+    When you start to catch your breath find the picture of your Dad you've placed on your bedside <break time=\"1s\"/>
+    Look at it carefully <break time=\"0.5s\"/>
+    try and describe it to me.
+    <audio src=\"https://s3-eu-west-1.amazonaws.com/wr-hackathon/alexa_compatable_ocean.mp3\" />
+    Josh, is it helping?
+</speak>
+"
+issue_sorted: "{user_name}, I'm really glad that you're feeling better. Have a lovely {greeting}"
+initiate_call: "Dan is available online. Just say Hey Alexa call Dan, to talk to him now."

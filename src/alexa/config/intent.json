@@ -1,0 +1,46 @@
+{
+  "intents": [
+
+    {
+      "slots": [
+        {
+          "name": "problem_user",
+          "type": "ally_problem_user"
+        }
+      ],
+      "intent": "identifyProblem"
+    },
+
+    {
+      "slots": [
+        {
+          "name": "user_problem",
+          "type": "user_problem_type"
+        }
+      ],
+      "intent": "identifyIssue"
+    },
+
+    {
+      "intent": "AMAZON.ResumeIntent"
+    },
+    {
+      "intent": "AMAZON.PauseIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    }
+  ]
+}
