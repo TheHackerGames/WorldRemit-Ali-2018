@@ -19,3 +19,4 @@ Ali is using the following core technologies & frameworks to work properly:
 * Alexa integration api
 * etc
 
+![Image of Components](Components.png)
