@@ -26,16 +26,10 @@ var SetupFitbit = function (_Component) {
   function SetupFitbit(props, context) {
     _classCallCheck(this, SetupFitbit);
 
-    var _this = _possibleConstructorReturn(this, (SetupFitbit.__proto__ || Object.getPrototypeOf(SetupFitbit)).call(this, props, context));
-
-    _this.state = _this.context.data || window.__INITIAL_STATE__ || { items: [] };
-    return _this;
+    return _possibleConstructorReturn(this, (SetupFitbit.__proto__ || Object.getPrototypeOf(SetupFitbit)).call(this, props, context));
   }
 
   _createClass(SetupFitbit, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {}
-  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(

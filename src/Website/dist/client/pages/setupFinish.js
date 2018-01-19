@@ -30,9 +30,6 @@ var SetupFinish = function (_Component) {
   }
 
   _createClass(SetupFinish, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {}
-  }, {
     key: 'render',
     value: function render() {
       var tipStyle = {
@@ -97,12 +94,12 @@ var SetupFinish = function (_Component) {
             _react2.default.createElement(
               'h3',
               null,
-              'Place a picture or object on your bedside'
+              'Try asking Alexa to get help from Ali'
             ),
             _react2.default.createElement(
               'div',
               null,
-              'It can be anything meaningful that reminds you of the present'
+              'Practice using Ali through Alexa and learn how Ali can assist'
             )
           )
         ),

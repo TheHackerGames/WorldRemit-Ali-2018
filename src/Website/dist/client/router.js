@@ -10,41 +10,41 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = require('react-router');
 
+var _allies = require('./pages/allies');
+
+var _allies2 = _interopRequireDefault(_allies);
+
 var _appRoot = require('./app-root');
 
 var _appRoot2 = _interopRequireDefault(_appRoot);
 
-var _home = require('./home');
+var _home = require('./pages/home');
 
 var _home2 = _interopRequireDefault(_home);
 
-var _setupAlexa = require('./setupAlexa');
-
-var _setupAlexa2 = _interopRequireDefault(_setupAlexa);
-
-var _setupFitbit = require('./setupFitbit');
-
-var _setupFitbit2 = _interopRequireDefault(_setupFitbit);
-
-var _setupFinish = require('./setupFinish');
-
-var _setupFinish2 = _interopRequireDefault(_setupFinish);
-
-var _journal = require('./journal');
+var _journal = require('./pages/journal');
 
 var _journal2 = _interopRequireDefault(_journal);
 
-var _volunteers = require('./volunteers');
-
-var _volunteers2 = _interopRequireDefault(_volunteers);
-
-var _allies = require('./allies');
-
-var _allies2 = _interopRequireDefault(_allies);
-
-var _notfound = require('./notfound');
+var _notfound = require('./pages/notfound');
 
 var _notfound2 = _interopRequireDefault(_notfound);
+
+var _setupAlexa = require('./pages/setupAlexa');
+
+var _setupAlexa2 = _interopRequireDefault(_setupAlexa);
+
+var _setupFinish = require('./pages/setupFinish');
+
+var _setupFinish2 = _interopRequireDefault(_setupFinish);
+
+var _setupFitbit = require('./pages/setupFitbit');
+
+var _setupFitbit2 = _interopRequireDefault(_setupFitbit);
+
+var _volunteers = require('./pages/volunteers');
+
+var _volunteers2 = _interopRequireDefault(_volunteers);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

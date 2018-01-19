@@ -26,16 +26,10 @@ var Home = function (_Component) {
   function Home(props, context) {
     _classCallCheck(this, Home);
 
-    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props, context));
-
-    _this.state = _this.context.data || window.__INITIAL_STATE__ || { items: [] };
-    return _this;
+    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props, context));
   }
 
   _createClass(Home, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {}
-  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(

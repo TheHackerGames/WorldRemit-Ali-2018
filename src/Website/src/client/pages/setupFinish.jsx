@@ -6,9 +6,6 @@ class SetupFinish extends Component {
     super(props, context);
   }
 
-  componentDidMount() {
-  }
-
   render() {
     var tipStyle = {
       textAlign: 'left',
@@ -31,8 +28,8 @@ class SetupFinish extends Component {
             <div>This could be helpful later</div>
           </div>
           <div className="list-item delay30">
-            <h3>Place a picture or object on your bedside</h3>
-            <div>It can be anything meaningful that reminds you of the present</div>
+            <h3>Try asking Alexa to get help from Ali</h3>
+            <div>Practice using Ali through Alexa and learn how Ali can assist</div>
           </div>
         </div>
         <div className="setupFooter">

@@ -3,8 +3,9 @@ import 'isomorphic-fetch';
 
 import React, {Component} from 'react';
 import {Link} from 'react-router';
-import Nav from './nav';
-import ListItem from './listItem';
+
+import Nav from '../components/nav';
+import ListItem from '../components/listItem';
 
 const api = 'https://hackthonapi-webapp-wr.azurewebsites.net';
 

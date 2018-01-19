@@ -3,9 +3,10 @@ import 'isomorphic-fetch';
 
 import React, {Component} from 'react';
 import {Link} from 'react-router';
-import Nav from './nav';
-import ListItem from './listItem';
 import moment from 'moment';
+
+import Nav from '../components/nav';
+import ListItem from '../components/listItem';
 
 const api = 'https://hackthonapi-webapp-wr.azurewebsites.net';
 
@@ -68,7 +69,7 @@ class Journal extends Component {
                 this.state.entries.map((entry, index) => {
                   const date = moment(entry.dateTime);
                   const meta = {
-                    leftPart: date.format('H:m A')
+                    leftPart: date.format('HH:mm A')
                   };
 
                   return <ListItem key={index}

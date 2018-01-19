@@ -1,15 +1,15 @@
 import React from 'react';
 import {Router, browserHistory, Route} from 'react-router';
 
+import Allies from './pages/allies';
 import AppRoot from './app-root';
-import Home from './home';
-import SetupAlexa from './setupAlexa';
-import SetupFitbit from './setupFitbit';
-import SetupFinish from './setupFinish';
-import Journal from './journal';
-import Volunteers from './volunteers';
-import Allies from './allies';
-import NotFound from './notfound';
+import Home from './pages/home';
+import Journal from './pages/journal';
+import NotFound from './pages/notfound';
+import SetupAlexa from './pages/setupAlexa';
+import SetupFinish from './pages/setupFinish';
+import SetupFitbit from './pages/setupFitbit';
+import Volunteers from './pages/volunteers';
 
 const AppRouter = () => {
   return (

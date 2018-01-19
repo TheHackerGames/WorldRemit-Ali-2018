@@ -3,10 +3,6 @@ import React, {Component} from 'react';
 class Setup extends Component {
   constructor(props, context) {
     super(props, context);
-    this.state = this.context.data || window.__INITIAL_STATE__ || {items: []};
-  }
-
-  componentDidMount() {
   }
 
   render() {

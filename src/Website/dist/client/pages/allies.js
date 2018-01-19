@@ -16,11 +16,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = require('react-router');
 
-var _nav = require('./nav');
+var _nav = require('../components/nav');
 
 var _nav2 = _interopRequireDefault(_nav);
 
-var _listItem = require('./listItem');
+var _listItem = require('../components/listItem');
 
 var _listItem2 = _interopRequireDefault(_listItem);
 
@@ -34,46 +34,44 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var api = 'https://hackthonapi-webapp-wr.azurewebsites.net';
 
-var Volunteers = function (_Component) {
-  _inherits(Volunteers, _Component);
+var Allies = function (_Component) {
+  _inherits(Allies, _Component);
 
-  function Volunteers(props, context) {
-    _classCallCheck(this, Volunteers);
+  function Allies(props, context) {
+    _classCallCheck(this, Allies);
 
-    var _this = _possibleConstructorReturn(this, (Volunteers.__proto__ || Object.getPrototypeOf(Volunteers)).call(this, props, context));
+    var _this = _possibleConstructorReturn(this, (Allies.__proto__ || Object.getPrototypeOf(Allies)).call(this, props, context));
 
     _this.state = {
       fetching: true,
-      volunteers: []
+      allies: []
     };
     return _this;
   }
 
-  _createClass(Volunteers, [{
+  _createClass(Allies, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
       var _this2 = this;
 
-      setTimeout(function () {
-        fetch(api + '/volunteers', {
-          mode: 'cors',
-          headers: {
-            Accept: 'application/json'
-          }
-        }).then(function (response) {
-          if (response.ok) {
-            return response.json();
-          }
-          throw new Error('Network response was not ok');
-        }).then(function (json) {
-          _this2.setState({
-            fetching: false,
-            volunteers: json
-          });
-        }).catch(function (error) {
-          console.error('Error making API call: ' + error.message);
+      fetch(api + '/heroes/1/contacts', {
+        mode: 'cors',
+        headers: {
+          Accept: 'application/json'
+        }
+      }).then(function (response) {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('Network response was not ok');
+      }).then(function (json) {
+        _this2.setState({
+          fetching: false,
+          allies: json
         });
-      }, 1000);
+      }).catch(function (error) {
+        console.error('Error making API call: ' + error.message);
+      });
     }
   }, {
     key: 'render',
@@ -97,41 +95,25 @@ var Volunteers = function (_Component) {
             )
           );
         } else {
-          if (_this3.state.volunteers.length > 0) {
-            return _react2.default.createElement(
-              'div',
-              null,
-              _this3.state.volunteers.map(function (volunteer, index) {
-                var meta = {
-                  leftPart: volunteer.address + ' \xB7 ',
-                  rightPart: volunteer.rating,
-                  emphasised: volunteer.rating === 'Highly recommended'
-                };
+          return _react2.default.createElement(
+            'div',
+            null,
+            _this3.state.allies.map(function (ally, index) {
+              var meta = {
+                leftPart: ally.address + ' \xB7 ',
+                rightPart: 'Online now',
+                emphasised: true
+              };
 
-                return _react2.default.createElement(
-                  _reactRouter.Link,
-                  { key: index, to: 'allies' },
-                  _react2.default.createElement(_listItem2.default, {
-                    image: volunteer.profilePicture,
-                    days: volunteer.date,
-                    title: volunteer.name,
-                    meta: meta,
-                    description: volunteer.description
-                  })
-                );
-              })
-            );
-          } else {
-            return _react2.default.createElement(
-              'div',
-              null,
-              _react2.default.createElement(
-                'p',
-                null,
-                'No entries'
-              )
-            );
-          }
+              return _react2.default.createElement(_listItem2.default, {
+                key: index,
+                image: ally.profilePicture,
+                days: ally.date,
+                title: ally.name,
+                meta: meta
+              });
+            })
+          );
         }
       };
 
@@ -144,21 +126,21 @@ var Volunteers = function (_Component) {
           _react2.default.createElement(
             'h1',
             null,
-            'Build your network'
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'We\u2019re looking for volunteers who are experienced talking about issues you\u2019re facing and are happy to talk whenever you are'
+            'Your Allies'
           ),
           _react2.default.createElement('br', null),
           content()
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'setupFooter' },
+          _react2.default.createElement(_nav2.default, { activeItem: 'allies' })
         )
       );
     }
   }]);
 
-  return Volunteers;
+  return Allies;
 }(_react.Component);
 
-exports.default = Volunteers;
+exports.default = Allies;

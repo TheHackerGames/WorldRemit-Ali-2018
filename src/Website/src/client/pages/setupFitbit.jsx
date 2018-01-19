@@ -4,10 +4,6 @@ import {Link} from 'react-router';
 class SetupFitbit extends Component {
   constructor(props, context) {
     super(props, context);
-    this.state = this.context.data || window.__INITIAL_STATE__ || {items: []};
-  }
-
-  componentDidMount() {
   }
 
   render() {

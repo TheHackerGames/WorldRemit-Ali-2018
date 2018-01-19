@@ -6,9 +6,6 @@ class SetupAlexa extends Component {
     super(props, context);
   }
 
-  componentDidMount() {
-  }
-
   render() {
     return (
       <div className="setup">

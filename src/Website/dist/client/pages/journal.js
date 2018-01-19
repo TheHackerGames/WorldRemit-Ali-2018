@@ -16,17 +16,17 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = require('react-router');
 
-var _nav = require('./nav');
-
-var _nav2 = _interopRequireDefault(_nav);
-
-var _listItem = require('./listItem');
-
-var _listItem2 = _interopRequireDefault(_listItem);
-
 var _moment = require('moment');
 
 var _moment2 = _interopRequireDefault(_moment);
+
+var _nav = require('../components/nav');
+
+var _nav2 = _interopRequireDefault(_nav);
+
+var _listItem = require('../components/listItem');
+
+var _listItem2 = _interopRequireDefault(_listItem);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -110,7 +110,7 @@ var Journal = function (_Component) {
               _this3.state.entries.map(function (entry, index) {
                 var date = (0, _moment2.default)(entry.dateTime);
                 var meta = {
-                  leftPart: date.format('H:m A')
+                  leftPart: date.format('HH:mm A')
                 };
 
                 return _react2.default.createElement(_listItem2.default, { key: index,
